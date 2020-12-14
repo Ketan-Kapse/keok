@@ -1,0 +1,242 @@
+@import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
+/* Reminder to devs: can use Ctrl + e to open built in color selector in brackets*/
+body {
+  font-family: "Lato", sans-serif;
+  position: relative;
+}
+
+h2 {
+  padding: 2px;
+  margin: 2px;
+  margin-bottom: 5px;
+  display: block;
+  float: left;
+  width: 100%;
+  height: 100%;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  letter-spacing: 0.05em;
+}
+
+form {
+  /*width: 80vw;
+  height: 80vh;*/
+  margin: auto;
+}
+
+.background {
+  padding: 10px;
+  text-align: center;
+}
+#title {
+  margin-bottom: 7px;
+}
+
+label {
+  float: left;
+  width: 50%;
+  text-align: right;
+}
+
+input,
+select {
+  padding: 2px;
+  margin: 10px;
+  max-width: 13em;
+  border-color: #cecece;
+  border: 1px outset;
+  border-top: none;
+  border-left: none;
+  float: left;
+}
+input.no_appearance{
+  -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding: 0px;
+    margin: 0px;
+    width: 100px;
+    max-width: 100px;
+    border: none;
+    float: right;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: block;
+    text-align: start;
+    background-color: white;
+
+}
+.user-input{
+  padding: 1px;
+  margin-top: 8px;
+  margin-left: 0px;
+  margin-bottom: 8px;
+  max-width: 40%;
+  border-color: #cecece;
+  border: 1px outset;
+  border-top: none;
+  border-left: none;
+  float: right;
+}
+
+
+button {
+  display: block;
+  text-align: center;
+  margin: auto;
+  clear: left;
+  color: white;
+  background-color: #1abc9c;
+  border: 2px solid white;
+  font-size: 20px;
+  border-radius: 8px;
+}
+button:hover {
+  color: #111;
+  background: white;
+  border: 1px solid black;
+}
+div {
+  line-height: 200%;
+}
+
+br {
+  display: inline-block;
+  float: left;
+  clear: left;
+  width: 50%;
+  text-align: right;
+}
+
+ul {
+  list-style-type: none;
+  padding: 10px;
+  margin: auto;
+}
+
+li {
+  padding: 5px;
+  text-align: center;
+  margin: auto;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+table {
+  border-spacing: 5px;
+  float: right;
+  padding: 15px;
+  margin-right: 50px;
+}
+th,
+td {
+  padding: 15px;
+  font-size: 15px;
+}
+th {
+  text-align: left;
+}
+
+li.checkout-list {
+  padding: 0px;
+  max-width: 5000px;
+  max-height: 64px;
+}
+#cartform {
+  float: left;
+  width: 350px;
+  height: 100px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  padding: 30px;
+  justify-items: center;
+}
+.grid-item {
+  padding: 30px;
+  text-align: center;
+  justify-content: center;
+}
+.userImage{
+  background-image: url("../images/user.png");
+  position: relative;
+  background-repeat:no-repeat;
+  background-size: cover;
+  margin-top: 20px;
+  height: 230px;
+  left: 10%;
+  top: 10%;
+  width: 230px;
+  animation: .5s ease-out 0s 1 loadIn forwards;
+  animation-delay: .1s;
+  opacity: .2;
+  float: left;
+  
+}
+.shippingImage{
+  background: url("../images/newbox.png");
+  position: relative;
+  background-repeat:no-repeat;
+  background-size: contain;
+  margin-top: 20px;
+  height: 250px;
+  top: 30%;
+  left: 10%;
+  width: 250px;
+  animation: .5s ease-out 0s 1 slideInFromLeft;
+  opacity: .9;
+  float: left;
+  margin-bottom: 0px;
+  
+}
+.image_wrapper {
+  display: inline-block;
+  margin-right: 0px !important;
+  height: 329px;
+  width: 300px;
+}
+.user_wrapper {
+  display: inline-block;
+  position: relative;
+  float: center;
+}
+.content_wrapper {
+  border: 2px solid grey;
+  padding: 20px;
+  min-width: 436px;
+  box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 25px;
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  width: 50%;
+}
+
+
+@keyframes loadIn {
+  0% {
+    opacity: .2;
+    /* transform: translateX(-300%); */
+  }
+  100% {
+    opacity: .9;
+    /* transform: translateX(0%); */
+  }
+}
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-300%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+

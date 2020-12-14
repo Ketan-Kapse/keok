@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
+
+@import url('https://fonts.googleapis.com/css?family=Paytone+One&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css?family=Petit+Formal+Script&display=swap');
+
+.header {
+    display: inline-block;
+    padding: 20px;
+    width: 100vw;
+    height: 120px;
+    text-align: center;
+    color: white;
+    background: #1abc9c;
+    font-size: 20px;
+    clear: both;
+}
+#webtitle{
+    font-family: 'Petit Formal Script', cursive;
+}
+h1 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 3.5em;
+}
+
+#description {
+    margin: 0;
+}
+body {
+    display: inline-block;
+    margin: 0px;
+    font-family: "Lato", sans-serif;
+}
+iframe {
+    display: block;
+    border: none;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+}
+.iframe-container {
+    display: block;
+    text-align: center;
+}
+#navBar {
+    background-image: linear-gradient(white 15%, #595c5f 400%);
+    background-size: cover;
+    /* width: 100vw; */
+    width: 100%;
+    letter-spacing: 2px;
+    font-weight: 700;
+    font-family: "Paytone One", sans-serif;
+    text-decoration: none;
+    text-align: center;
+    background-color: #fff;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+li {
+    display: inline;
+}
+a {
+    color: rgb(102, 153, 153);
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px;
+    transition: background 0.15s ease-in-out;
+}
+a:hover {
+    transition-delay: .1s;
+    color: #111;
+    background: #1abc9c;
+}
+a:focus{
+    color: white;
+    background: #1abc9c;
+}
+.divider {
+    height: 40px;
+}
+.wrapper {
+
+    background-image: url("../images/t5.png");
+    background-size:100% 100%;
+
+}
+
+:before {
+    box-sizing: border-box;
+}
+
+nav > ul > li+li+li::before {
+    content: "\00BB";
+    padding: 0 5px;
+    color: #ccc;
+}
+  
+footer {
+    font-weight: 100;
+    opacity: 0.5;
+    text-align: center;
+    width: 100w;
+    height: 10vh;
+}
+
