@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../css/main.css"/>
+    <script src="../js/jquery-3.4.1.min.js" defer></script>
+    <script src="../js/script.js" defer></script>
+    <script src="../js/checkout.js" defer></script>
+    <title> Checkout </title>
+</head>
+
+<body>
+
+<div class="background">
+    <div class= "content_wrapper">
+
+    <h1> Checkout </h1>
+
+    <h2 id="summary"> Order Summary</h2>
+
+    <!-- <ul> -->
+
+        <form id="submitPayment" action="../html/confirmation_page.html">
+        <label> Items:</label> <input readonly="readonly" id="itemCount" name="itemCount"/> </li>
+        <label>Shipping & Handling: ₹</label> <input readonly="readonly" id="shippingAndHandling"/> </li>
+        <label>Total before tax: ₹</label> <input readonly="readonly" id="totalBeforeTax" /> </li>
+        <label>Estimated Tax: ₹</label> <input readonly="readonly" id="estimatedTax" /> </li>
+        <label> Order Total: ₹</label> <input readonly="readonly" id="orderTotal" name="orderTotal"> 
+
+
+
+    
+
+    <div id="paymentInfo">
+            <h2>Payment Information</h2>
+            <label for="payment_type"> Payment Type:</label>
+            <select id="payment_type" name="payment_type">
+                <option value="" disabled selected>
+                    Select Payment Type
+                </option>
+                <option value="visa"> Visa</option>
+                <option value="mastercard"> Mastercard</option>
+                <option value="american express">Credit card/option>
+            </select>
+            <label for="cardnumber">Card Number:</label>
+            <input
+                    type="text"
+                    name="cardnumber"
+                    id="cardnumber"
+                    placeholder="Card Number"
+                    pattern="[0-9]{13,16}"
+                    title="Please Enter a Valid Card Number "
+                    required/>
+
+            <label for="month"> Expiration Date:</label>
+            <input
+                    type="text"
+                    pattern="(0[1-9]|10|11|12)/[0-9]{2}"
+                    title="Please Enter the Expiration Date in MM/YY Format"
+                    placeholder="MM/YY"
+                    name="month"
+                    id="month"
+                    required/>
+            <br/>
+
+
+            <strong class="agree-and-authorize"> I agree and authorize the amount to be charged to my card</strong>
+
+            <br/>
+            <label for="agree"> I agree </label>
+            <input type="checkbox" name="agree" id="agree" value="agree" required><br/><br/>
+
+            <button type="submit">Submit Order</button>
+        </form>
+    </div>
+    </div>
+</div>
+
+</body>
+</html>
